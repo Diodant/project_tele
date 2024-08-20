@@ -1,0 +1,636 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  color: #3e3b3f;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #fff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+a:focus {
+  outline: none;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Центрирует блок с меню */
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #f9fafa;
+}
+
+.logo {
+  position: absolute;
+  left: 20px; /* Располагает логотип слева */
+}
+
+.logo-link {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Выровнять элементы меню по центру */
+}
+
+.nav-link {
+  margin: 0 15px; /* Устанавливаем отступы между пунктами меню */
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: gray; /* Цвет при наведении или активном состоянии */
+}
+
+.header-image-container {
+  width: 100%;
+  overflow: hidden; /* Для предотвращения появления полос прокрутки */
+}
+
+.header-image {
+  width: 100%;
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  display: block; /* Убирает нижний отступ у изображения */
+  object-fit: cover; /* Обеспечивает покрытие всей ширины контейнера */
+}
+
+.home-page {
+  position: relative;
+  height: 60vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* .overlay {
+  background-color: rgba(75, 0, 130, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+} */
+
+.services-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  color: #8e44ad; 
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+    text-align: center;
+    font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.service-item {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 150px; /* Установите желаемый размер иконки */
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgb(22, 22, 63); /* Основной цвет заголовков */
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555; /* Цвет текста описания */
+}
+
+.award-info {
+  font-family: 'Montserrat', sans-serif; /* Основной шрифт */
+  color: #16163F; /* Основной цвет текста */
+  padding: 60px 40px; /* Увеличенный padding для более просторного оформления */
+  border-radius: 8px; /* Немного округленные углы */
+  max-width: 1200px; /* Максимальная ширина увеличена для большей читабельности */
+  margin: 40px auto; /* Центрирование блока с отступом сверху и снизу */
+  line-height: 1.8; /* Увеличенный межстрочный интервал для улучшенной читаемости */
+}
+
+.award-title {
+  font-size: 36px; /* Увеличенный размер шрифта заголовка */
+  font-weight: 700; /* Более жирный шрифт для заголовка */
+  margin-bottom: 30px; /* Увеличенный отступ снизу */
+  color: #3e0a78; /* Используем основной фиолетовый цвет для заголовка */
+  text-align: center;
+  letter-spacing: 1px; /* Легкое увеличение межбуквенного интервала */
+}
+
+.award-text {
+  margin-bottom: 25px; /* Увеличенный отступ между абзацами */
+  font-size: 20px; /* Немного увеличенный размер шрифта */
+  color: #3e3b3f; /* Основной цвет текста, подходящий к цветовой палитре сайта */
+}
+
+.award-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.card {
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.img-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #8e44ad;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card-button-container {
+  text-align: center; 
+}
+
+.card-button {
+  display: inline-block; /* Делаем кнопку блоком */
+  padding: 10px 20px;
+  background-color: #16163F; /* Темно-синий цвет */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Убирает подчеркивание ссылки */
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #333366; 
+}
+
+.testimonials-section {
+  background-color: #9E3FFD; 
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.testimonials-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7); 
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-quote {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.testimonial-author {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.testimonial-company {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый цвет */
+}
+
+.testimonial-dots {
+  margin-top: 40px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.position-page {
+  font-family: 'Montserrat', sans-serif;
+  color: #16163F; /* Основной цвет текста */
+  padding: 60px 20px; /* Добавляем отступы для оформления */
+  max-width: 1200px;
+  margin: 0 auto; /* Центрируем страницу */
+  line-height: 1.8; /* Увеличенный межстрочный интервал */
+}
+
+.position-title {
+  font-size: 36px; /* Увеличенный размер шрифта заголовка */
+  font-weight: 700; /* Более жирный шрифт для заголовка */
+  color: #3e0a78; /* Основной фиолетовый цвет для заголовка */
+  margin-bottom: 30px; /* Увеличенный отступ снизу */
+  text-align: center;
+}
+
+.position-content h2 {
+  font-size: 28px; /* Размер шрифта для заголовков разделов */
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #3e0a78; /* Используем основной фиолетовый цвет */
+}
+
+.position-content p {
+  font-size: 20px; /* Размер шрифта для основного текста */
+  color: #3e3b3f; /* Цвет текста */
+  margin-bottom: 15px;
+}
+
+.position-content ul {
+  padding-left: 30px; /* Увеличиваем отступ для списков */
+  list-style-type: none; /* Убираем стандартные маркеры */
+}
+
+.position-content ul li {
+  margin-bottom: 12px; /* Отступ между элементами списка */
+  position: relative; /* Для позиционирования кастомных маркеров */
+}
+
+.position-content ul li::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px; /* Размер маркера */
+  height: 10px; /* Размер маркера */
+  background-color: #9E3FFD; /* Цвет маркера */
+  border-radius: 50%; /* Создаем круглый маркер */
+}
+
+.criteria-page {
+  font-family: 'Montserrat', sans-serif;
+  color: #16163F; /* Основной цвет текста */
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.criteria-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #3e0a78; /* Основной фиолетовый цвет для заголовка */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.criteria-content h2 {
+  font-size: 28px; /* Размер шрифта для заголовков разделов */
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #3e0a78; /* Используем основной фиолетовый цвет */
+}
+
+.criteria-content p {
+  font-size: 18px; /* Размер шрифта для основного текста */
+  color: #3e3b3f; /* Цвет текста */
+  margin-bottom: 15px;
+}
+
+.criteria-content ul {
+  padding-left: 50px; /* Увеличенный отступ для списков */
+  list-style-type: none; /* Убираем стандартные маркеры */
+}
+
+.criteria-content ul li {
+  margin-bottom: 10px; /* Отступ между элементами списка */
+  position: relative; /* Для позиционирования кастомных маркеров */
+}
+
+.criteria-content ul li::before {
+  content: '';
+  position: absolute;
+  left: -30px; /* Отодвигаем маркер дальше влево от текста */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px; /* Размер маркера */
+  height: 10px; /* Размер маркера */
+  background-color: #9E3FFD; /* Цвет маркера */
+  border-radius: 50%; /* Создаем круглый маркер */
+}
+
+
+.footer-section {
+  background-image: url('./img/footer.webp'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-color: #f9fafa;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.footer-info h3 {
+  color: #8e44ad;
+  margin-bottom: 20px;
+}
+
+.footer-info p {
+  color: #16163F;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #16163F;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #8e44ad;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #4A4A4A; 
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #d3d3d3; 
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: #9E3FFD; 
+}
+
+textarea {
+  resize: none;
+}
+
+.submit-button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #9E3FFD; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-button:hover {
+  background-color: #6e5cb6; 
+}
+
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
