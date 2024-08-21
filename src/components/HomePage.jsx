@@ -5,6 +5,7 @@ import { ReactComponent as ServiceIcon1 } from '../img/ServiceIcon1.svg';
 import { ReactComponent as ServiceIcon2 } from '../img/ServiceIcon2.svg';
 import { ReactComponent as ServiceIcon3 } from '../img/ServiceIcon3.svg';
 import docImage from '../img/doc.png';
+import image from '../img/lair.jpg';
 
 const HomePage = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -104,6 +105,20 @@ const HomePage = () => {
             </div>
         </div>
       </section>
+      <section className="text-image-section">
+      <div className="text-content">
+      <h2>Наша команда экспертов</h2>
+        <p>
+          Команда Национальной телевизионной премии "Телетриумф" состоит из лучших профессионалов телеиндустрии, обладающих глубоким знанием и многолетним опытом в сфере телевидения. Наша команда экспертов не только оценивает номинантов, но и формирует новые стандарты качества, вдохновляя будущее поколение мастеров телеэкрана.
+        </p>
+        <p>
+          Каждый член нашей команды является признанным специалистом в своей области, будь то продюсирование, режиссура, сценаристика или операторская работа. Мы гордимся тем, что можем объединить таких талантливых людей для оценки самых значимых достижений в украинской телеиндустрии и признания лучших из лучших.
+        </p>
+      </div>
+      <div className="image-content">
+        <img src={image} alt="Lair" />
+      </div>
+    </section>
     </>
   );
 };

@@ -1,9 +1,14 @@
 import React from 'react';
 
-const HeaderImage = ({ imageUrl, altText }) => {
+const HeaderImage = ({ imageUrl, altText, children }) => {
   return (
-    <div className="header-image-container">
-      <img src={imageUrl} alt={altText} className="header-image" />
+    <div
+      className="header-image-container"
+      style={{ backgroundImage: `url(${imageUrl})` }}
+    >
+      <div className="header-overlay">
+        {children}
+      </div>
     </div>
   );
 };

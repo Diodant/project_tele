@@ -1,18 +1,21 @@
 import React from 'react';
-import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaYoutube, FaMapMarkerAlt, FaGlobe, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="footer-section">
+    <footer id="footer" className="footer-section">
       <div className="footer-container">
         <div className="footer-info">
-          <h3 className="footer-title">Мы ждем вас</h3>
-          <p>ул. Арбат, 1а, Москва, 119019, Россия</p>
-          <p>info@mysite.ru</p>
-          <p>т. +7 123 456-78-90</p>
+          <h3 className="footer-title">Контакты</h3>
+          <p>Организатор Национальной премии “Телетриумф”</p>
+          <p>Национальный совет Украины по вопросам телевидения и радиовещания</p>
+          <p><FaMapMarkerAlt /> 01601, Киев, ул. Прорезная, 2</p>
+          <p><FaGlobe /> Сайт: <a href="https://www.nrada.gov.ua/" target="_blank" rel="noopener noreferrer">https://www.nrada.gov.ua/</a></p>
+          <p><FaEnvelope /> e-mail: <a href="mailto:nrada@nrada.gov.ua">nrada@nrada.gov.ua</a></p>
+          <p><FaPhone /> Телефон: +380 44 278-48-89</p>
           <div className="social-icons">
-            <a href="https://vk.com" target="_blank" rel="noopener noreferrer" aria-label="VK">
-              <FaVk />
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <FaYoutube />
             </a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebookF />

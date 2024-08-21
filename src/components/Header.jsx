@@ -2,6 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+  const scrollToFooter = (e) => {
+    e.preventDefault();
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
       <div className="logo">
@@ -9,11 +14,10 @@ const Header = () => {
       </div>
       <nav className="navbar">
         <NavLink to="/about" className="nav-link" activeClassName="active-link">О премии</NavLink>
-        <NavLink to="/challenges" className="nav-link" activeClassName="active-link">Challenges</NavLink>
-        <NavLink to="/plans" className="nav-link" activeClassName="active-link">Plans</NavLink>
-        <NavLink to="/trainers" className="nav-link" activeClassName="active-link">Trainers</NavLink>
-        <NavLink to="/groups" className="nav-link" activeClassName="active-link">Groups</NavLink>
-        <NavLink to="/contact" className="nav-link" activeClassName="active-link">Contact</NavLink>
+        <NavLink to="/winners" className="nav-link" activeClassName="active-link">Победители</NavLink>
+        <NavLink to="/jury" className="nav-link" activeClassName="active-link">Жюри</NavLink>
+        <NavLink to="/gallery" className="nav-link" activeClassName="active-link">Фото</NavLink>
+        <a href="#footer" className="nav-link" onClick={scrollToFooter}>Контакты</a>
       </nav>
     </header>
   );
