@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project_tele/static/css/main.d71f6405.css",
-    "main.js": "/project_tele/static/js/main.53e4abcb.js",
+    "main.css": "/project_tele/static/css/main.0ca82346.css",
+    "main.js": "/project_tele/static/js/main.a5f734e3.js",
     "static/js/453.ae3339de.chunk.js": "/project_tele/static/js/453.ae3339de.chunk.js",
     "static/media/site-bg.jpg": "/project_tele/static/media/site-bg.b40954bcf4d39a9cecb3.jpg",
     "static/media/doc.png": "/project_tele/static/media/doc.6005aa9223c49118a9d5.png",
     "static/media/BG.jpg": "/project_tele/static/media/BG.da959a10291880f74e2b.jpg",
     "static/media/lair.jpg": "/project_tele/static/media/lair.254878d85ffb98408e4e.jpg",
     "static/media/about.jpg": "/project_tele/static/media/about.c0ee8ea4af840999ff0a.jpg",
-    "static/media/LOGO_Монтажная область 1.png": "/project_tele/static/media/LOGO_Монтажная область 1.6e68f80855bdb3a23d3f.png",
     "static/media/photo13.jpg": "/project_tele/static/media/photo13.bd14a91261cb8f21a5e2.jpg",
+    "static/media/logo.jpg": "/project_tele/static/media/logo.70c5332bf11c45e2396f.jpg",
     "static/media/photo6.webp": "/project_tele/static/media/photo6.f99f04987a5e3acd566d.webp",
     "static/media/photo20.jpg": "/project_tele/static/media/photo20.03c7365829e5d7197e62.jpg",
     "static/media/photo17.jpg": "/project_tele/static/media/photo17.bbdeccc87280a7dbc9c5.jpg",
@@ -38,12 +38,12 @@
     "index.html": "/project_tele/index.html",
     "static/media/ServiceIcon3.svg": "/project_tele/static/media/ServiceIcon3.5ff0e1394155d2c0d1719e8f5899199d.svg",
     "static/media/ServiceIcon2.svg": "/project_tele/static/media/ServiceIcon2.26523451404e0581927d649f8f7db9f8.svg",
-    "main.d71f6405.css.map": "/project_tele/static/css/main.d71f6405.css.map",
-    "main.53e4abcb.js.map": "/project_tele/static/js/main.53e4abcb.js.map",
+    "main.0ca82346.css.map": "/project_tele/static/css/main.0ca82346.css.map",
+    "main.a5f734e3.js.map": "/project_tele/static/js/main.a5f734e3.js.map",
     "453.ae3339de.chunk.js.map": "/project_tele/static/js/453.ae3339de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d71f6405.css",
-    "static/js/main.53e4abcb.js"
+    "static/css/main.0ca82346.css",
+    "static/js/main.a5f734e3.js"
   ]
 }
