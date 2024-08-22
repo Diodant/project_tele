@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project_tele/static/css/main.d71f6405.css",
-    "main.js": "/project_tele/static/js/main.ff9ae572.js",
+    "main.js": "/project_tele/static/js/main.53e4abcb.js",
     "static/js/453.ae3339de.chunk.js": "/project_tele/static/js/453.ae3339de.chunk.js",
     "static/media/site-bg.jpg": "/project_tele/static/media/site-bg.b40954bcf4d39a9cecb3.jpg",
     "static/media/doc.png": "/project_tele/static/media/doc.6005aa9223c49118a9d5.png",
@@ -39,11 +39,11 @@
     "static/media/ServiceIcon3.svg": "/project_tele/static/media/ServiceIcon3.5ff0e1394155d2c0d1719e8f5899199d.svg",
     "static/media/ServiceIcon2.svg": "/project_tele/static/media/ServiceIcon2.26523451404e0581927d649f8f7db9f8.svg",
     "main.d71f6405.css.map": "/project_tele/static/css/main.d71f6405.css.map",
-    "main.ff9ae572.js.map": "/project_tele/static/js/main.ff9ae572.js.map",
+    "main.53e4abcb.js.map": "/project_tele/static/js/main.53e4abcb.js.map",
     "453.ae3339de.chunk.js.map": "/project_tele/static/js/453.ae3339de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d71f6405.css",
-    "static/js/main.ff9ae572.js"
+    "static/js/main.53e4abcb.js"
   ]
 }
