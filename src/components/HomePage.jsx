@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import BgVideo from '../img/bg.mp4';
 import { ReactComponent as ServiceIcon1 } from '../img/ServiceIcon1.svg';
 import { ReactComponent as ServiceIcon2 } from '../img/ServiceIcon2.svg';
 import { ReactComponent as ServiceIcon3 } from '../img/ServiceIcon3.svg';
@@ -41,17 +40,14 @@ const HomePage = () => {
   return (
     <>
       <div className="home-page">
-        <video className="background-video" autoPlay loop muted>
-          <source src={BgVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="background-image"></div>
       </div>
       <section className="services-section">
         <h2 className="section-title">Новые горизонты телевизионной премии</h2>
         <div className="services-container">
           <div className="service-item">
             <ServiceIcon1 className="service-icon" />
-            <h3>Разработка телевизионных проектов</h3>
+            <h3>Признание лучших телепроектов</h3>
             <p>Премия "Телетриумф" отмечает лучшие телевизионные проекты и профессионалов, чьи работы внесли значительный вклад в развитие украинской телеиндустрии.</p>
           </div>
           <div className="service-item">

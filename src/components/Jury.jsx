@@ -35,7 +35,8 @@ const Jury = () => {
           </ul>
           <p>Каждая гильдия формируется с учетом профессиональной специализации членов, что позволяет более глубоко и точно оценивать работы в каждой номинации. Это гарантирует, что награды "Телетриумф" будут вручены самым достойным представителям телеиндустрии.</p>
   
-          <h1 className="page-title">Состав Жюри {selectedYear}</h1>
+          {/* <h1 className="page-title">Состав Жюри {selectedYear}</h1> */}
+          <h1 className="page-title">Состав Жюри</h1>
           <div className="year-selector">
             {Object.keys(juryData).map(year => (
               <button 
