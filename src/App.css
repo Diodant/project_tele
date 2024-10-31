@@ -670,7 +670,7 @@ a:focus {
 }
 
 .criteria-content ul {
-  padding-left: 50px; 
+  padding-left: 30px; 
   list-style-type: none; 
 }
 
@@ -994,10 +994,18 @@ a:focus {
   gap: 15px;
 }
 
+.article-autor {
+  font-size: 16px;
+  color: #999;
+  text-align: end;
+  margin-top: 20px;
+
+}
+
 .article-page-image {
-  width: 100%;
+  width: 900px;
   height: auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
   border-radius: 10px;
 }
 

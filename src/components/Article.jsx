@@ -26,9 +26,10 @@ const Article = () => {
         case 'image':
           return <img key={index} src={block.src} alt={block.alt} className="article-page-image" />;
         case 'list':
-          return <ul className='position-list'>
+          return <div className='criteria-content'><ul>
             <li key={index}>{block.text}</li>
             </ul>
+            </div>
         default:
           return null;
       }
@@ -50,6 +51,7 @@ const Article = () => {
         <div className="article-page-content">
           {renderContent(article.content)}
         </div>
+        <h1 className="article-autor">Материал подготовил: {article.autor}</h1>
       </div>
     </div>
     </>
